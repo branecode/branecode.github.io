@@ -18,10 +18,27 @@
   p {
     margin-bottom: 20px;
   }
-  a {
-    text-decoration: none;
-    color: blue;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
+  li {
+    margin-bottom: 10px;
+  }
+  .social-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-size: cover;
+  }
+  .twitter { background-image: url('https://image.flaticon.com/icons/png/512/23/23931.png'); }
+  .linkedin { background-image: url('https://image.flaticon.com/icons/png/512/61/61109.png'); }
+  .linktree { background-image: url('https://image.flaticon.com/icons/png/512/61/61109.png'); }
+  .patreon { background-image: url('https://image.flaticon.com/icons/png/512/23/23931.png'); }
+  .medium { background-image: url('https://image.flaticon.com/icons/png/512/61/61109.png'); }
+  .buymeacoffee { background-image: url('https://image.flaticon.com/icons/png/512/23/23931.png'); }
 </style>
 </head>
 <body>
@@ -39,12 +56,12 @@
 
 <p>Follow Us on Socials:</p>
 <ul>
-  <li>Twitter: <a href="https://twitter.com/ourbackengine">Our Back-Engine</a></li>
-  <li>LinkedIn: <a href="https://linkedin.com/businesspage">Business Page</a></li>
-  <li>Linktree: <a href="https://linktr.ee/allourlinks">All our Links</a></li>
-  <li>Patreon: <a href="https://patreon.com/articles">Articles</a></li>
-  <li>Medium: <a href="https://medium.com/media">Media</a></li>
-  <li>BuyMeACoffee: <a href="https://buymeacoffee.com/welovecoffee">We Love Coffee</a></li>
+  <li>Twitter: <span class="social-icon twitter"></span><a href="https://twitter.com/ourbackengine">Our Back-Engine</a></li>
+  <li>LinkedIn: <span class="social-icon linkedin"></span><a href="https://linkedin.com/businesspage">Business Page</a></li>
+  <li>Linktree: <span class="social-icon linktree"></span><a href="https://linktr.ee/allourlinks">All our Links</a></li>
+  <li>Patreon: <span class="social-icon patreon"></span><a href="https://patreon.com/articles">Articles</a></li>
+  <li>Medium: <span class="social-icon medium"></span><a href="https://medium.com/media">Media</a></li>
+  <li>BuyMeACoffee: <span class="social-icon buymeacoffee"></span><a href="https://buymeacoffee.com/welovecoffee">We Love Coffee</a></li>
 </ul>
 
 </body>
