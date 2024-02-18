@@ -9,9 +9,10 @@
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
-    padding: 20px;
+    background-color: #141f2d; /* dark blue color */
+    color: #fff; /* white text */
     margin: 0;
+    padding: 0;
   }
   h1 {
     font-size: 24px;
@@ -22,10 +23,11 @@
     margin-bottom: 20px;
   }
   .contact-info {
-    background-color: #ffffff;
+    background-color: #1d2939; /* darker blue color */
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
   }
   .contact-info ul {
     padding: 0;
@@ -38,7 +40,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #1d2939; /* darker blue color */
     padding: 15px 20px;
     box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
   }
@@ -55,17 +57,21 @@
   .social-icon {
     width: 30px;
     height: 30px;
-    background-color: #007bff;
+    background-color: transparent;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+  }
+  .social-icon img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
   }
   .social-icon:hover {
-    background-color: #0056b3;
+    transform: scale(1.2);
   }
 </style>
 </head>
@@ -86,12 +92,12 @@
 
 <div class="footer">
   <ul class="social-icons">
-    <li><a class="social-icon" href="https://twitter.com/ourbackengine">T</a></li>
-    <li><a class="social-icon" href="https://linkedin.com/businesspage">L</a></li>
-    <li><a class="social-icon" href="https://linktr.ee/allourlinks">L</a></li>
-    <li><a class="social-icon" href="https://patreon.com/articles">P</a></li>
-    <li><a class="social-icon" href="https://medium.com/media">M</a></li>
-    <li><a class="social-icon" href="https://buymeacoffee.com/welovecoffee">B</a></li>
+    <li><a class="social-icon" href="https://twitter.com/ourbackengine"><img src="twitter_icon.png" alt="Twitter"></a></li>
+    <li><a class="social-icon" href="https://linkedin.com/businesspage"><img src="linkedin_icon.png" alt="LinkedIn"></a></li>
+    <li><a class="social-icon" href="https://linktr.ee/allourlinks"><img src="linktree_icon.png" alt="Linktree"></a></li>
+    <li><a class="social-icon" href="https://patreon.com/articles"><img src="patreon_icon.png" alt="Patreon"></a></li>
+    <li><a class="social-icon" href="https://medium.com/media"><img src="medium_icon.png" alt="Medium"></a></li>
+    <li><a class="social-icon" href="https://buymeacoffee.com/welovecoffee"><img src="buymeacoffee_icon.png" alt="Buy Me A Coffee"></a></li>
   </ul>
 </div>
 
