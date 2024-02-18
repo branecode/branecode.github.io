@@ -9,6 +9,8 @@
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f9f9f9;
+    padding: 20px;
   }
   h1 {
     font-size: 24px;
@@ -18,51 +20,72 @@
   p {
     margin-bottom: 20px;
   }
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  .contact-info {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
-  li {
+  .contact-info ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  .contact-info li {
     margin-bottom: 10px;
   }
-  .social-icon {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    background-size: cover;
+  .social-icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
   }
-  .twitter { background-image: url('https://image.flaticon.com/icons/png/512/23/23931.png'); }
-  .linkedin { background-image: url('https://image.flaticon.com/icons/png/512/61/61109.png'); }
-  .linktree { background-image: url('https://image.flaticon.com/icons/png/512/61/61109.png'); }
-  .patreon { background-image: url('https://image.flaticon.com/icons/png/512/23/23931.png'); }
-  .medium { background-image: url('https://image.flaticon.com/icons/png/512/61/61109.png'); }
-  .buymeacoffee { background-image: url('https://image.flaticon.com/icons/png/512/23/23931.png'); }
+  .social-icons li {
+    margin-right: 10px;
+  }
+  .social-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  .social-icon:hover {
+    background-color: #0056b3;
+  }
 </style>
 </head>
 <body>
 
 <h1>My First Heading</h1>
 
-<p>We're glad you're here. At Branecode, we're committed to fostering an open and supportive community where everyone feels empowered to ask questions, share experiences, and learn from each other. Don't hesitate to reach out - we're here to guide you on your journey to achieving peak cognitive performance!</p>
+<div class="contact-info">
+  <p>We're glad you're here. At Branecode, we're committed to fostering an open and supportive community where everyone feels empowered to ask questions, share experiences, and learn from each other. Don't hesitate to reach out - we're here to guide you on your journey to achieving peak cognitive performance!</p>
 
-<p>Contact Information:</p>
-<ul>
-  <li>Email: <a href="mailto:branecode@gmail.com">branecode@gmail.com</a></li>
-  <li>Cellular: +44 773 131 7843</li>
-  <li>WhatsApp: <a href="https://whatsapp.com/communitygroup">Community Group</a></li>
-</ul>
+  <p>Contact Information:</p>
+  <ul>
+    <li>Email: <a href="mailto:branecode@gmail.com">branecode@gmail.com</a></li>
+    <li>Cellular: +44 773 131 7843</li>
+    <li>WhatsApp: <a href="https://whatsapp.com/communitygroup">Community Group</a></li>
+  </ul>
+</div>
 
-<p>Follow Us on Socials:</p>
-<ul>
-  <li>Twitter: <span class="social-icon twitter"></span><a href="https://twitter.com/ourbackengine">Our Back-Engine</a></li>
-  <li>LinkedIn: <span class="social-icon linkedin"></span><a href="https://linkedin.com/businesspage">Business Page</a></li>
-  <li>Linktree: <span class="social-icon linktree"></span><a href="https://linktr.ee/allourlinks">All our Links</a></li>
-  <li>Patreon: <span class="social-icon patreon"></span><a href="https://patreon.com/articles">Articles</a></li>
-  <li>Medium: <span class="social-icon medium"></span><a href="https://medium.com/media">Media</a></li>
-  <li>BuyMeACoffee: <span class="social-icon buymeacoffee"></span><a href="https://buymeacoffee.com/welovecoffee">We Love Coffee</a></li>
-</ul>
+<div class="social-icons">
+  <p>Follow Us on Socials:</p>
+  <ul>
+    <li><a class="social-icon" href="https://twitter.com/ourbackengine">T</a></li>
+    <li><a class="social-icon" href="https://linkedin.com/businesspage">L</a></li>
+    <li><a class="social-icon" href="https://linktr.ee/allourlinks">L</a></li>
+    <li><a class="social-icon" href="https://patreon.com/articles">P</a></li>
+    <li><a class="social-icon" href="https://medium.com/media">M</a></li>
+    <li><a class="social-icon" href="https://buymeacoffee.com/welovecoffee">B</a></li>
+  </ul>
+</div>
 
 </body>
 </html>
+
